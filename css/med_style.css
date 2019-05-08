@@ -1,0 +1,59 @@
+html, body {
+    width: 100%;
+    flex-grow: 1;
+    font-size: 18px
+}
+
+#main_section {
+    width: 100%;
+}
+
+#sidebar {
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    padding: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    transform: translate(-768px, 0);
+    transition: transform 0.3s ease;
+    background-color: #7d97ad;
+}
+
+#sidebar.open {
+    transform: translate(0, 0);
+}
+
+#menuitem {
+    display: block;
+    width: 10%;
+}
+
+#name {
+    width: 85%
+}
+
+#face {
+    width: 50%;
+}
+
+#website_code {
+    width: 100%;
+}
+
+#website_code_img {
+    width: 95%;
+    margin: auto;
+    display: block
+}
+
+#featured_work_header {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 5px solid #2d3c49;
+}
+
+.work {
+    margin: auto;
+}
