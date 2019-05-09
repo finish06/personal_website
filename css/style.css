@@ -22,9 +22,33 @@ header {
     width: 100%;
 }
 
+.nav_item {
+    display: inline;
+}
+
 #menuitem {
     display: none;
     width: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.2em;
+  overflow: hidden;
+  background-color: #2d3c49;
+  border-radius: 8px;
+}
+
+li > a {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-right: 2em;
+    color: #7d97ad;
+}
+
+li > a:visited {
+    color: #7d97ad;
 }
 
 #menu {
