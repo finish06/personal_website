@@ -47,14 +47,14 @@ html, body {
     display: block
 }
 
-#featured_work_header {
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
-    border-bottom: 5px solid #2d3c49;
-}
-
 .work {
     margin: auto;
     width: 80%;
+}
+
+/* certificates HTML design */
+.my_slides {
+  max-width: 98%;
+  margin: auto;
+  padding: 2px
 }

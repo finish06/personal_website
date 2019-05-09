@@ -1,11 +1,7 @@
 .cert {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-.my_slides {
-  max-width: 33%
 }
 
 .category {

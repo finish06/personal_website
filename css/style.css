@@ -63,6 +63,13 @@ a:visited {
     margin: auto;
 }
 
+.underline {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 5px solid #2d3c49;
+}
+
 figcaption {
     text-align: center;
     margin: 1em;

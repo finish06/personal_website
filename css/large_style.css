@@ -42,3 +42,10 @@ html, body {
     font-size: 2em;
     border-bottom: 5px solid #2d3c49;
 }
+
+/* certificates HTML design */
+.my_slides {
+  max-width: 23%;
+  margin: auto;
+  padding: 2px
+}
