@@ -19,7 +19,9 @@ header {
 }
 
 #name {
-    width: 100%;
+    width: 90%;
+    padding-right: 10px;
+
 }
 
 .nav_item {
@@ -55,6 +57,12 @@ li > a:visited {
     color: #7d97ad;
 }
 
+#quick_pitch {
+    width: 100%;
+    margins: auto;
+    font-weight: normal;
+}
+
 #menu {
      font-size: 30px;
 }
@@ -81,6 +89,19 @@ a:visited {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.quick_pitch {
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+#image_and_work {
+    margin: auto;
+}
+
+.featured_work_div {
+    margin: auto;
 }
 
 .work {

@@ -11,14 +11,10 @@ html, body {
     width: 100%;
 }
 
-#sidebar {
-    width: 15%;
-    text-align: center;
-    font-weight: bold;
-}
-
 #face {
-    width: 80%;
+    border-radius: 50%;
+    max-width: 120px;
+    max-height: 120px;
 }
 
 #image_and_work {
