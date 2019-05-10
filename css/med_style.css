@@ -20,6 +20,27 @@ html, body {
     background-color: #7d97ad;
 }
 
+ul {
+    background-color: #7d97ad;
+    padding: 0px;
+}
+
+.nav_item {
+    padding: 5px;
+    display: block;
+
+}
+li > a {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2d3c49;
+    padding: 0;
+}
+
+li > a:visited {
+    color: #2d3c49;
+}
+
 #sidebar.open {
     transform: translate(0, 0);
 }
@@ -31,6 +52,22 @@ html, body {
 
 #name {
     width: 85%
+}
+
+
+#face_group {
+    display: none;
+}
+
+#face_group_small {
+    display: inline;
+}
+
+#face_small {
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+    display: block;
 }
 
 #face {
