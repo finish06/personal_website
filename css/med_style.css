@@ -70,6 +70,10 @@ li > a:visited {
     display: block;
 }
 
+#quick_pitch {
+    width: 85%;
+}
+
 #face {
     width: 50%;
 }
