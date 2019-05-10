@@ -11,7 +11,7 @@ html, body {
     width: 100%;
 }
 
-#face {
+#face_large {
     border-radius: 50%;
     max-width: 120px;
     max-height: 120px;

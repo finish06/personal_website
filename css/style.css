@@ -21,7 +21,10 @@ header {
 #name {
     width: 90%;
     padding-right: 10px;
+}
 
+#face_group_small {
+    display: none;
 }
 
 .nav_item {
