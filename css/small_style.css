@@ -71,6 +71,10 @@ li > a:visited {
     display: block;
 }
 
+#quick_pitch {
+    width: 85%;
+}
+
 #website_code {
     width: 100%;
 }
