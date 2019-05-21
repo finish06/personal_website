@@ -41,7 +41,11 @@ html, body {
 
 /* certificates HTML design */
 .my_slides {
-  max-width: 23%;
+  max-width: 32%;
   margin: auto;
   padding: 2px
+}
+
+.data_science_slides {
+  max-width: 32%;
 }
