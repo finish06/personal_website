@@ -60,9 +60,10 @@ li > a:visited {
     color: #7d97ad;
 }
 
-#quick_pitch {
+.quick_pitch {
     width: 100%;
     margins: auto;
+    text-align: center;
     font-weight: normal;
 }
 
