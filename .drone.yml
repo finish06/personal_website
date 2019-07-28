@@ -17,4 +17,3 @@ steps:
         - cd /var/www/html/personal_website
         - git pull
         - nginx -s reload
-        - cd ~
