@@ -11,7 +11,7 @@ steps:
       username:
         from_secret: username
       key:
-        from_secret: ssh_key
+        from_secret: ssh_key1
       port: 22
       script:
         - cd /var/www/html/personal_website
