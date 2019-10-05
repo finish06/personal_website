@@ -14,24 +14,16 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caleb's Portfolio</title>
+    <!-- Polymer Scripts -->
+    <script type='module' src="./head_element.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/small_style.css" media="screen and (max-width: 360px)">
     <link rel="stylesheet" type="text/css" href="css/med_style.css" media="screen and (min-width: 361px) and (max-width: 1024px)">
     <link rel="stylesheet" type="text/css" href="css/large_style.css" media="screen and (min-width: 1025px)">
 </head>
 <body>
-    <header class="container">
-        <div id="menuitem">
-            <span id="menu">&#9776;</span>
-        </div>
-        <div id="name">
-            <h1 class="introduction" id="calebdunn">CALEB DUNN</h1>
-            <h2 class="introduction">Life Long Learner</h2>
-        </div>
-        <div id="face_group">
-            <img class="pictures face" id="face_large" src="images/professionalPhoto.jpg" alt="Image of Caleb">
-        </div>
-    </header>
+    <head-element></head-element>
     <nav id="sidebar">
         <div id="face_group_small">
             <img class="pictures face" id="face_small" src="images/professionalPhoto.jpg" alt="Image of Caleb">
@@ -63,14 +55,7 @@
             </section>
         </div>
     </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function(i) {
-        menu.addEventListener('click', function(e) {
-            sidebar.classList.toggle('open');
-            e.stopPropagation();
-        })
-    })
-</script>
+
 <script src="./js/script.js"></script>
 </body>
 </html>
