@@ -22,7 +22,7 @@ model = {
             image: './images/personal_website.png',
             alt: 'Personal Website Image'
         }
-    ]
+    ],
 }
 
 octopus = {
@@ -59,3 +59,20 @@ projectsView = {
 }
 
 octopus.getProjects();
+
+// Websocket for Home Assistant
+window.onload = function() {
+    let socket = new WebSocket("ws://hassio.du.nn:8123/api/websocket");
+    socket.onopen = () => socket.send('{"type": "auth", "access_token": "***"}');
+    socket.addEventListener('open', function() {
+        socket.send('{"id": 1, "type": "subscribe_events", "event_type": "state_changed"}');
+        console.log("Listening for events...")
+    });
+    socket.onmessage = function(event) {
+        output = JSON.parse(event.data);
+        regex = RegExp('^light.*');
+        if (regex.test(output.event.data.new_state.entity_id)) {
+            console.log(output.event.data.new_state.entity_id + " --- " + output.event.data.new_state.state)
+        }
+    }
+};
