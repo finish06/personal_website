@@ -5,7 +5,7 @@ export class SideNavElement extends LitElement {
         return css`
             .sidenav {
                 height: 100%;
-                width: 12%;
+                width: 15%;
                 position: fixed;
                 z-index: 1;
                 top: 0;
@@ -15,7 +15,9 @@ export class SideNavElement extends LitElement {
                 padding-top: 80px;
             }
             .sidenav a {
-                padding: 6px 6px 6px 32px;
+                text-align: center;
+                padding-top: 8px;
+                padding-bottom: 8px;
                 text-decoration: none;
                 font-size: 1.5rem;
                 color: #7d97ad;
@@ -25,17 +27,18 @@ export class SideNavElement extends LitElement {
                 display: block;
                 margin: auto;
                 border-radius: 35%;
-                max-width: 85%;
+                width: 85%;
+                max-width: 200px;
               }`
     }
 
     render() {
         return html`
         <div class="sidenav">
-            <img class="pictures face" id="face_large" src="images/professionalPhoto.jpg" alt="Image of Caleb">
-            <a href="index.html">Home</a>
-            <a href="resume/resume.pdf">Resume</a>
-            <a href="certificates/certificates.html">Certificates</a>
+            <img class="pictures face" id="face_large" src="/images/professionalPhoto.jpg" alt="Image of Caleb">
+            <a href="/index.html">Home</a>
+            <a href="/resume/resume.pdf">Resume</a>
+            <a href="/certificates/certificates.html">Certificates</a>
         </div>`;
     }
 }
