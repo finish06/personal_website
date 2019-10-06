@@ -7,3 +7,8 @@
 .category {
   width: 100%
 }
+
+#main {
+  margin-left: 13%;
+  padding-top: 80px;
+}
