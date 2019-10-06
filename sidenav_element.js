@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import '/bio.js'
 
 export class SideNavElement extends LitElement {
     static get styles() {
@@ -23,20 +24,16 @@ export class SideNavElement extends LitElement {
                 color: #7d97ad;
                 display: block;
               }
-              img {
-                display: block;
-                margin: auto;
-                border-radius: 35%;
-                width: 85%;
-                max-width: 200px;
+              #home {
+                  padding-top: 16px;
               }`
     }
 
     render() {
         return html`
         <div class="sidenav">
-            <img class="pictures face" id="face_large" src="/images/professionalPhoto.jpg" alt="Image of Caleb">
-            <a href="/index.html">Home</a>
+            <bio-element></bio-element>
+            <a id="home" href="/index.html">Home</a>
             <a href="/resume/resume.pdf">Resume</a>
             <a href="/certificates/certificates.html">Certificates</a>
         </div>`;
