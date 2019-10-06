@@ -3,7 +3,21 @@ import { LitElement, html, css } from 'lit-element';
 export class HeadElement extends LitElement {
     static get styles() {
         return css`
-            button { background-color: #7d97ad; border-width: 0px; }`;
+            button {
+                background-color: #7d97ad;
+                border-width: 0px; 
+            }
+            @media only screen and (min-width: 1025px) {
+                #navi {
+                    background-color: #2d3c49;
+                    display: block-inline;
+                    margin-left: 325px;
+                    font-size: 2rem;
+                }
+            }
+            #navi a {
+                color: #7d97ad;
+            }`;
     }
     
     render() {
@@ -14,17 +28,15 @@ export class HeadElement extends LitElement {
         <link rel="stylesheet" type="text/css" href="css/large_style.css" media="screen and (min-width: 1025px)">
 
         <header class="container">
-        <button id="menuitem" @click="${this.handleClick}">
-            <span id="menu">&#9776;</span>
-        </button>
-        <div id="name">
-            <h1 class="introduction" id="calebdunn">CALEB DUNN</h1>
-            <h2 class="introduction">Life Long Learner</h2>
-        </div>
-        <div id="face_group">
-            <img class="pictures face" id="face_large" src="images/professionalPhoto.jpg" alt="Image of Caleb">
-        </div>
-    </header>`;
+            <div id='navi'>
+                <a id="home" href="/index.html">Home</a>
+                <a href="/resume/resume.pdf">Resume</a>
+                <a href="/certificates/certificates.html">Certificates</a>
+            </div>
+            <button id="menuitem" @click="${this.handleClick}">
+                <span id="menu">&#9776;</span>
+            </button>
+        </header>`;
     }
 
     handleClick() {

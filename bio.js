@@ -14,14 +14,14 @@ export class BioElement extends LitElement {
                 color: #7d97ad;
                 width: 85%;
                 margin: auto;
-                padding-top: 6px;
+                padding-top: 20px;
                 text-align: center;
               }`
     }
 
     render() {
         return html`
-        <div class="sidenav">
+        <div>
             <img class="pictures face" id="face_large" src="/images/professionalPhoto.jpg" alt="Image of Caleb">
             <p>A <em>technology enthusiast</em> with a <strong>strong passion for continuous learning</strong> of novel topics related to <em>software development</em> & more!</p>
         </div>`;
