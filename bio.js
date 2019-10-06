@@ -3,6 +3,9 @@ import { LitElement, html, css } from 'lit-element';
 export class BioElement extends LitElement {
     static get styles() {
         return css`
+              div {
+                padding-top: 30px;
+              }
               img {
                 display: block;
                 margin: auto;

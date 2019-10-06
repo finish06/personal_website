@@ -3,39 +3,53 @@ import { LitElement, html, css } from 'lit-element';
 export class HeadElement extends LitElement {
     static get styles() {
         return css`
-            button {
-                background-color: #7d97ad;
-                border-width: 0px; 
-            }
             @media only screen and (min-width: 1025px) {
-                #navi {
+                #name {
+                    padding-left: 25px;
+                }
+                header {;
                     background-color: #2d3c49;
-                    display: block-inline;
-                    margin-left: 325px;
-                    font-size: 2rem;
+                    top: 0px;
+                    position: fixed;
+                    width: 100%;
+                    height: 136px;
+                }
+                h1 {
+                    font-size: 2.9rem;
+                    margin-bottom: 0px;
+                    margin-top: 32px;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                    margin-top: 0px;
+                    margin-bottom: 32px;
+                }
+                #menuitem {
+                    visibility: hidden;
                 }
             }
             #navi a {
                 color: #7d97ad;
+            }
+            h1, h2 {
+              color: #7d97ad;
+            }
+            div a {
+                font-size: 1rem;
+            }
+            button {
+                background-color: #7d97ad;
+                border-width: 0px; 
             }`;
     }
     
     render() {
         return html`
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/small_style.css" media="screen and (max-width: 360px)">
-        <link rel="stylesheet" type="text/css" href="css/med_style.css" media="screen and (min-width: 361px) and (max-width: 1024px)">
-        <link rel="stylesheet" type="text/css" href="css/large_style.css" media="screen and (min-width: 1025px)">
-
-        <header class="container">
-            <div id='navi'>
-                <a id="home" href="/index.html">Home</a>
-                <a href="/resume/resume.pdf">Resume</a>
-                <a href="/certificates/certificates.html">Certificates</a>
+        <header>
+            <div id="name">
+                <h1 class="introduction" id="calebdunn">CALEBDUNN.tech</h1>
+                <h2 class="introduction">Life Long Learner</h2>
             </div>
-            <button id="menuitem" @click="${this.handleClick}">
-                <span id="menu">&#9776;</span>
-            </button>
         </header>`;
     }
 

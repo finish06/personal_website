@@ -44,7 +44,7 @@ html, body {
 /* certificates HTML design */
 .my_slides {
   max-width: 32%;
-  margin: auto;
+  margin-left: 15px;
   padding: 2px
 }
 

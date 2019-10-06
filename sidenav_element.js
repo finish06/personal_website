@@ -7,20 +7,13 @@ export class SidebarElement extends LitElement {
             @media only screen and (min-width: 1025px) {
                 .sidebar {
                     height: 100%;
-                    width: 325px;
+                    width: 300px;
                     position: fixed;
                     z-index: 1;
-                    top: 0;
+                    top: 136px;
                     left: 0;
                     background-color: #2d3c49;
                     overflow-x: hidden;
-                }
-                h1 {
-                    font-size: 2.9rem;
-                    margin-bottom: 0;
-                }
-                h2 {
-                    font-size: 1.5rem;
                 }
             }
             .sidebar a {
@@ -34,20 +27,12 @@ export class SidebarElement extends LitElement {
               }
               #home {
                   padding-top: 16px;
-              }
-              h1, h2 {
-                color: #7d97ad;
-                text-align: center;
               }`
     }
 
     render() {
         return html`
         <div class="sidebar">
-            <div id="name">
-                <h1 class="introduction" id="calebdunn">CALEB DUNN</h1>
-                <h2 class="introduction">Life Long Learner</h2>
-            </div>
             <bio-element></bio-element>
         </div>`;
     }
