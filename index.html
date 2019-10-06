@@ -15,8 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caleb's Portfolio</title>
     <!-- Polymer Scripts -->
-    <script type='module' src="./head_element.js"></script>
-    <script type='module' src="./sidenav_element.js"></script>
+    <script type='module' src="/head_element.js"></script>
+    <script type='module' src="/sidenav_element.js"></script>
+    <script type='module' src="/unsplash_image.js"></script>
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/small_style.css" media="screen and (max-width: 360px)">
@@ -26,11 +27,11 @@
 <body>
     <sidenav-element></sidenav-element>
     <div id="main">
-        <div class="container" id="main">
+        <div class="container">
             <h3 class="quick_pitch">A <em>technology enthusiast</em> with a <strong>strong passion for continuous learning</strong> of novel topics related to <em>software development</em> & more!</h3>
             <div class="container" id="image_and_work">
                 <section id="website_code">
-                    <img class='pictures' id='website_code_img' src="images/code.png" alt="Website code">
+                    <unsplash-img></unsplash-img>
                 </section>
             </div>
             <div class="container featured_work_div">

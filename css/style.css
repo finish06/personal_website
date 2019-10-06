@@ -13,9 +13,8 @@ html, body {
     flex-wrap: wrap;
 }
 
-header {
-    width: 100%;
-    padding: 1.2em;
+#main {
+    margin-top: 80px;
 }
 
 #name {
