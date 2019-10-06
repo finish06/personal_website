@@ -1,6 +1,8 @@
 html, body {
-    width: 90%;
-    max-width: 1600px;
+}
+
+#main {
+    margin-left: 325px;
 }
 
 #calebdunn {
