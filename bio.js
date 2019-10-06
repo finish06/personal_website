@@ -18,7 +18,7 @@ export class BioElement extends LitElement {
                 padding-left: 0px;
               }
               li {
-                color: #7d97ad;
+                color: #2d3c49;;
                 width: 85%;
                 margin: auto;
                 padding-top: 20px;

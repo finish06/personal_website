@@ -12,7 +12,7 @@ export class SidebarElement extends LitElement {
                     z-index: 1;
                     top: 136px;
                     left: 0;
-                    background-color: #2d3c49;
+                    background-color: #7d97ad;
                     overflow-x: hidden;
                 }
             }
@@ -22,7 +22,7 @@ export class SidebarElement extends LitElement {
                 padding-bottom: 8px;
                 text-decoration: none;
                 font-size: 1.5rem;
-                color: #7d97ad;
+                color: #2d3c49;
                 display: block;
               }
               #home {
