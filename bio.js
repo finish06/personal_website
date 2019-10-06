@@ -13,12 +13,17 @@ export class BioElement extends LitElement {
                 width: 85%;
                 max-width: 200px;
               }
-              p {
+              ul {
+                list-style: none;
+                padding-left: 0px;
+              }
+              li {
                 color: #7d97ad;
                 width: 85%;
                 margin: auto;
                 padding-top: 20px;
                 text-align: center;
+                font-size: 1.2rem;
               }`
     }
 
@@ -26,7 +31,12 @@ export class BioElement extends LitElement {
         return html`
         <div>
             <img class="pictures face" id="face_large" src="/images/professionalPhoto.jpg" alt="Image of Caleb">
-            <p>A <em>technology enthusiast</em> with a <strong>strong passion for continuous learning</strong> of novel topics related to <em>software development</em> & more!</p>
+            <ul>
+              <li>Pharmacist</li>
+              <li>Informaticist</li>
+              <li>Tech Enthusiast</li>
+              <li>Product Manager</li>
+            </ul>
         </div>`;
     }
 }
