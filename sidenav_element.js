@@ -5,7 +5,7 @@ export class SideNavElement extends LitElement {
         return css`
             .sidenav {
                 height: 100%;
-                width: 200px;
+                width: 12%;
                 position: fixed;
                 z-index: 1;
                 top: 0;
